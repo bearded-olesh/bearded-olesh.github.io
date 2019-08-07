@@ -93,28 +93,28 @@ header {
 	font-size: 80px;
 }
 
-footer {
+.feedback {
 	background-color: #6ED806;
 	padding: 90px 0;
 }
 
-footer h2 {
+.feedback h2 {
 	font-weight: bold;
 	font-size: 56px;
 }
 
-.footer__form {
+.feedback__form {
 	margin-top: 60px;
 }
 
-.footer__form button {
+.feedback__form button {
 	background-color: #222126;
 	color: #fff;
 	text-transform: uppercase;
 	height: 50px;
 }
 
-.footer__form input {
+.feedback__form input {
 	height: 50px;
 }
 
@@ -136,16 +136,16 @@ footer h2 {
 	border: 1px solid #28a745 !important;
 }
 
-.footer-footer {
+footer {
 	padding: 15px;
 }
 
-.footer-footer span,
-.footer-footer span a {
+footer span,
+footer span a {
 	font-size: 14px;
 }
 
-.footer-footer span i {
+footer span i {
 	color: #dc3545;
 	font-size: 12px
 }
@@ -212,12 +212,12 @@ footer h2 {
 	    font-size: 38px;
 	}
 
-	.footer-footer span,
-	.footer-footer span a {
+	footer span,
+	footer span a {
 		font-size: 12px;
 	}
 
-	.footer-footer span i {
+	footer span i {
 		font-size: 10px
 	}
 }
