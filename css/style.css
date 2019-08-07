@@ -14,6 +14,7 @@ header {
 
 .dark-block {
 	width: 100%;
+	background-color: #030303;
 }
 
 .container {
@@ -89,7 +90,6 @@ header {
 }
 
 .number a i {
-	color: #fff;
 	font-size: 80px;
 }
 
