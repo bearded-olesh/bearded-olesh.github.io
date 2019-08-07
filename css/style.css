@@ -223,6 +223,7 @@ footer span i {
 
 .hanging-button:hover {
 	cursor: pointer;
+	background-color: #7eff00;
 }
 
 /*Preloader*/
