@@ -5,11 +5,11 @@ $(function() {
         event.preventDefault()
     });
 
-	$('#btn-send').on('click enterKey', function(){
+	$('[name=btn-send]').on('click enterKey', function(){
 		var person = {
-			'name': $('#name').val(),
-			'phone': $('#phone').val(),
-			'email': $('#email').val(),
+			'name': $('[name=name]').val(),
+			'phone': $('[name=phone]').val(),
+			'email': $('[name=email]').val(),
 		};
 
 		$.ajax({
