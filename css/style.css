@@ -176,7 +176,6 @@ header {
 
 .form-control,
 .btn {
-	border: 0 !important;
 	border-radius: 0 !important;
 }
 
@@ -204,6 +203,7 @@ footer span i {
 
 .hanging-button {
 	position: fixed;
+	z-index: 9999;
 	right: 20px;
 	bottom: 20px;
 	display: -webkit-flex;
@@ -280,6 +280,17 @@ footer span i {
 	.number a i {
 		font-size: 42px;
 	}
+
+	.mb-150 {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.close-modal {
+		top: -50px;
+		right: 0;
+	}
 }
 
 @media screen and (max-width: 490px) {
@@ -308,7 +319,7 @@ footer span i {
 		font-size: 24px;
 	}
 
-	footer h2 {
+	.feedback h2 {
 	    font-size: 38px;
 	}
 
