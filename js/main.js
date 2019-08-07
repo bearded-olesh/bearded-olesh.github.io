@@ -1,7 +1,7 @@
 $(function() {
 
 	// preloader
-	$('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow');
+	$('#before-load').find('i').fadeOut().end().delay(600).fadeOut('slow');
 
 	// phone mask
 	$('[name=phone]').mask("+7 (999) 999-99-99");
