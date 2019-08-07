@@ -13,9 +13,7 @@ header {
 }
 
 .dark-block {
-	height: calc(100% + 1px);
 	width: 100%;
-	background-color: #030303;
 }
 
 .container {
