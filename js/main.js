@@ -1,10 +1,17 @@
 $(function() {
+
+	// preloader
+	$('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow');
+
+	// phone mask
 	$('[name=phone]').mask("+7 (999) 999-99-99");
 
+	// отмена действия по умолчанию
 	$('form').on('submit', function(event) {
         event.preventDefault()
     });
 
+	// отправка заявки
 	$('.btn-send').on('click enterKey', function(){
 
 		var elem = $(this).parent().parent(),
@@ -28,7 +35,7 @@ $(function() {
 	});
 });
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+
 (function() {
   'use strict';
   window.addEventListener('load', function() {
