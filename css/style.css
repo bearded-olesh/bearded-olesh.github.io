@@ -113,6 +113,11 @@ footer h2 {
 	background-color: #222126;
 	color: #fff;
 	text-transform: uppercase;
+	height: 50px;
+}
+
+.footer__form input {
+	height: 50px;
 }
 
 .btn:hover {
