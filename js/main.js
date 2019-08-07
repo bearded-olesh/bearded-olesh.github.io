@@ -1,16 +1,21 @@
 $(function() {
-	$("#phone").mask("+7 (999) 999-99-99");
+	$('[name=phone]').mask("+7 (999) 999-99-99");
 
 	$('form').on('submit', function(event) {
         event.preventDefault()
     });
 
-	$('[name=btn-send]').on('click enterKey', function(){
-		var person = {
-			'name': $('[name=name]').val(),
-			'phone': $('[name=phone]').val(),
-			'email': $('[name=email]').val(),
-		};
+	$('.btn-send').on('click enterKey', function(){
+
+		var elem = $(this).parent().parent(),
+			name = elem.find('[name=name]').val(),
+			phone = elem.find('[name=phone]').val(),
+			email = elem.find('[name=email]').val(),
+			person = {
+				'name': name,
+				'phone': phone,
+				'email': email,
+			};
 
 		$.ajax({
 			url: 'https://#/php/send.php',
