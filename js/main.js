@@ -34,7 +34,7 @@ $(function() {
 		});
 	});
 
-	$('#feedback__form').on('submit', function(){
+	$('form.feedback__form').on('submit', function(){
 		$('#feedback-modal').modal('hide');
 		setTimeout(function() {
 			$('#feedback-modal_success').modal('show');
