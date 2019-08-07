@@ -94,13 +94,25 @@ header {
 }
 
 .feedback {
-	background-color: #6ED806;
+	background: linear-gradient(to right, #6ED806,#7BB719);
 	padding: 90px 0;
 }
 
 .feedback h2 {
 	font-weight: bold;
 	font-size: 56px;
+}
+
+.feedback_dark {
+	background: #030303;
+}
+
+.feedback_dark h2 {
+	color: #fff;
+}
+
+.feedback_dark .feedback__form button {
+	background-color: #6ED806;
 }
 
 .feedback__form {
@@ -116,6 +128,15 @@ header {
 
 .feedback__form input {
 	height: 50px;
+}
+
+.modal .feedback {
+	background: #fff;
+	padding: 10px;
+}
+
+.modal .feedback h2 {
+	font-size: 30px;
 }
 
 .btn:hover {
@@ -148,6 +169,16 @@ footer span a {
 footer span i {
 	color: #dc3545;
 	font-size: 12px
+}
+
+.hanging-button {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+
+.hanging-button:hover {
+	cursor: pointer;
 }
 
 @media screen and (max-width: 991px) {
