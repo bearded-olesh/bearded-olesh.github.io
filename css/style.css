@@ -6,6 +6,7 @@
 
 a, a:hover {
 	text-decoration: none;
+	color: #6ED806;
 }
 
 header {
@@ -15,6 +16,19 @@ header {
 .dark-block {
 	width: 100%;
 	background-color: #030303;
+}
+
+.green-block {
+	width: 100%;
+	background-color: #6ED806;
+}
+
+.green-block .cta-btn {
+	background-color: #222126;
+}
+
+.green-block.call-to-action {
+	padding: 40px 0;
 }
 
 .container {
@@ -179,14 +193,6 @@ header {
 	border-radius: 0 !important;
 }
 
-.was-validated .form-control:invalid {
-	border: 1px solid #dc3545 !important;
-}
-
-.was-validated .form-control:valid {
-	border: 1px solid #28a745 !important;
-}
-
 footer {
 	padding: 15px;
 }
@@ -250,6 +256,54 @@ footer span i {
 
 .btn-send {
 	font-weight: 500;
+}
+
+
+.call-to-action h3 {
+	color: #fff;
+}
+
+.cta-btn {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	height: 50px;
+	line-height: 50px;
+	background-color: #6ED806;
+	color: #fff;
+	padding: 0 15px;
+	white-space: nowrap;
+}
+
+.cta-btn:hover {
+	color: #fff;
+}
+
+input[type="checkbox"] {
+    display:none;            
+}
+input[type="checkbox"] + label {
+  cursor: pointer;
+  padding-left: 30px;
+}
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    position: absolute;
+    left: 15px;
+}
+input[type="checkbox"] + label::before {
+    background-image: url('../img/checkbox.png');   
+}
+input[type="checkbox"]:checked + label::before {
+    background-image: url('../img/checkbox-on.png');
 }
 
 @media screen and (max-width: 991px) {

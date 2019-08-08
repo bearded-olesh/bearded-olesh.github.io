@@ -33,35 +33,10 @@
                 </section>
             </article>
 
-            <article class="feedback feedback_dark">
-                <section class="container">
-                    <h2 class="text-center">Запишитесь на курс лекций:</h2>
-                    <form action="" class="feedback__form">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="form-group col-lg-3">
-                                        <input type="text" class="form-control" name="name" placeholder="Имя" required>
-                                        <div class="invalid-feedback">
-                                            Укажите свое имя.
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-lg-3">
-                                        <input type="text" class="form-control" name="phone" placeholder="Телефон" required>
-                                        <div class="invalid-feedback">
-                                            Укажите свой телефон.
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-lg-3">
-                                        <input type="email" class="form-control" name="email" placeholder="Email">
-                                    </div>
-                                    <div class="form-group col-lg-3">
-                                        <button type="submit" class="btn btn-block btn-send">Записаться</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+            <article class="dark-block call-to-action">
+                <section class="container d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center">
+                    <h3 class="mb-0">При заказе прямо сейчас скидка в 5000 рублей</h3>
+                    <a class="cta-btn mt-4 mt-lg-0" href="javascript:void(0)" data-toggle="modal" data-target="#feedback-modal">получить скидку на курс</a>
                 </section>
             </article>
 
@@ -77,11 +52,22 @@
                 <img src="img/part-3.png" alt="" width="100%">
             </article>
 
+
             <article class="dark-block">
                 <section class="container">
                     <img src="img/part-4.png" alt="" width="100%">
                     <div class="gradient"></div>
                 </section>
+            </article>
+            
+            <article class="green-block call-to-action">
+                <section class="container d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-lg-between align-items-center">
+                    <h3 class="mb-0">Укажите ваш e-mail, чтобы получить программу мероприятий</h3>
+                    <a class="cta-btn mt-4 mt-lg-0" href="javascript:void(0)" data-toggle="modal" data-target="#feedback-modal">получить программу мероприятий</a>
+                </section>
+            </article>
+
+            <article class="dark-block">
                 <section class="container">
                     <div class="contacts">
                         <div class="contacts__phones">
@@ -131,6 +117,12 @@
                                     <div class="form-group col-lg-3">
                                         <button type="submit" class="btn btn-block btn-send">Записаться</button>
                                     </div>
+                                    <div class="form-group col-12">
+                                        <input class="form-check-input" type="checkbox" value="" id="check" checked required>
+                                        <label class="form-check-label" for="check">
+                                            Я согласен с условиями обработки <a href="#">персональных данных</a>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -175,6 +167,12 @@
                                                 </div>
                                                 <div class="form-group col-12">
                                                     <input type="email" class="form-control" name="email" placeholder="Email">
+                                                </div>
+                                                <div class="form-group col-12">
+                                                    <input class="form-check-input" type="checkbox" value="" id="check2" checked required>
+                                                    <label class="form-check-label" for="check2">
+                                                        Я согласен с условиями обработки <a href="#">персональных данных</a>
+                                                    </label>
                                                 </div>
                                                 <div class="form-group col-12 mb-0">
                                                     <button type="submit" class="btn btn-block btn-send">Записаться</button>
