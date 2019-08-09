@@ -22,14 +22,20 @@ $(function() {
 				'name': name,
 				'phone': phone,
 				'email': email,
+				'secret': 'FZ2dKEczDvHa',
 			};
 
 		$.ajax({
-			url: 'https://#/php/send.php',
+			url: 'https://tocolini.ru/send.php',
 			type: 'POST',
 			data: person,
 			success: function(res){
-			console.log(res);
+				console.log(res)
+				if(!res) {
+					$('.result-header').html('Что-то пошло не так!');
+					$('.result-text').html('Ваша заявка не отправлена, попробуйте еще раз');
+					$('.result-img').attr('src', 'img/error.png');
+				}
 			}
 		});
 	});
