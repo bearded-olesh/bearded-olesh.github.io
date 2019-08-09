@@ -307,11 +307,11 @@ input[type="checkbox"] + label::before {
     background-image: url('../img/checkbox.png');   
 }
 input[type="checkbox"]:checked + label::before {
-    background-image: url('../img/checkbox-on.png');
+    background-image: url('../img/checkbox-on2.png');
 }
 
-.feedback input[type="checkbox"]:checked + label::before {
-    background-image: url('../img/checkbox-on2.png');
+.modal input[type="checkbox"]:checked + label::before {
+    background-image: url('../img/checkbox-on.png');
 }
 
 @media screen and (max-width: 991px) {
