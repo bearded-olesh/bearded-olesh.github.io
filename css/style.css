@@ -272,6 +272,12 @@ footer span i {
 
 .btn-send {
 	font-weight: 500;
+	transition: .3s;
+}
+
+.feedback .btn-send:hover,
+.green-block .cta-btn:hover {
+	background-color: #49484C;
 }
 
 
@@ -290,10 +296,12 @@ footer span i {
 	color: #fff;
 	padding: 0 15px;
 	white-space: nowrap;
+	transition: .3s;
 }
 
 .cta-btn:hover {
 	color: #fff;
+	background-color: #9FD449;
 }
 
 input[type="checkbox"] {
