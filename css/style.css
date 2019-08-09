@@ -117,6 +117,18 @@ header {
 	padding: 40px 0;
 }
 
+.feedback .form-check-label {
+	color: #fff;
+}
+
+.feedback .form-check-label a {
+	color: #222126;
+}
+
+.feedback .form-check-label a:hover {
+	text-decoration: underline;
+}
+
 .feedback h2 {
 	font-weight: bold;
 	font-size: 56px;
