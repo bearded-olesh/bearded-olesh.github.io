@@ -52,37 +52,23 @@ header {
 
 .contacts {
 	padding: 20px 50px;
-}
-
-.contacts__phones,
-.contacts__links {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
-	flex-wrap: wrap;
+}
+
+.contacts__phones a,
+.contacts__links a {
+	display: block;
+	color: #fff;
+	font-size: 32px;
 }
 
 .contacts__phones a {
-	color: #fff;
 	font-weight: 500;
-	font-size: 50px;
-}
-
-.contacts__phones a i {
-	color: #6ED806;
-	font-size: 40px;
-}
-
-.contacts__links a {
-	color: #fff;
-	font-size: 40px;
 }
 
 .contacts__links a:hover {
@@ -97,6 +83,12 @@ header {
 	color: #6ED806;
 }
 
+.contacts__phones img,
+.contacts__links img {
+	width: 40px;
+	padding-bottom: 5px;
+}
+
 .mb-150 {
 	margin-bottom: 150px;
 }
@@ -108,8 +100,8 @@ header {
 	line-height: 40px;
 }
 
-.number a i {
-	font-size: 80px;
+.number img {
+	padding-bottom: 20px;
 }
 
 .feedback {
@@ -190,10 +182,6 @@ header {
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: center;
-}
-
-.close-modal i {
-	color: #fff;
 }
 
 .close-modal:hover {
@@ -335,46 +323,61 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media screen and (max-width: 991px) {
-	.contacts__phones a {
-	    font-size: 50px;
-	}
-
 	.number a {
 		font-size: 80px;
 	}
 
-	.number a i {
-		font-size: 70px;
+	.number img {
+		padding-bottom: 15px;
 	}
 
 	.call-to-action .container {
 		padding:0 15px;
 	}
+
+	.contacts__phones a,
+	.contacts__links a {
+		font-size: 26px;
+	}
+
+	.contacts__phones img,
+	.contacts__links img {
+		width: 25px;
+	}
 }
 
 @media screen and (max-width: 767px) {
-	.contacts__phones a {
-	    font-size: 40px;
+	.contacts__phones a,
+	.contacts__links a {
+		font-size: 20px;
 	}
 
-	.contacts__phones a i {
-		font-size: 34px;
+	.contacts__phones img,
+	.contacts__links img {
+		width: 20px;
+	}
+
+	.contacts {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 
 	.number a {
 		font-size: 50px;
 	}
 
-	.number a i {
-		font-size: 42px;
+	.number img {
+		width: 40px;
+		padding-bottom: 10px;
 	}
 
 	.mb-150 {
 		margin-bottom: 50px;
 	}
-}
 
-@media screen and (max-width: 767px) {
 	.close-modal {
 		top: -50px;
 		right: 0;
@@ -394,16 +397,13 @@ input[type="checkbox"]:checked + label::before {
 	    font-size: 28px;
 	}
 
-	.contacts__phones a i {
-		font-size: 22px;
-	}
-
 	.number a {
 		font-size: 36px;
 	}
 
-	.number a i {
-		font-size: 29px;
+	.number img {
+		width: 30px;
+		padding-bottom: 8px;
 	}
 
 	.contacts {
