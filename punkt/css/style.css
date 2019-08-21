@@ -19,16 +19,12 @@ img {
 h1, h2 {
 	color: var(--color-primary);
 	font-weight: bold;
-	font-size: 32px;
-	line-height: 110%;
 	margin-bottom: 30px;
 }
 
 h3 {
 	color: var(--color-secondary);
 	font-weight: 900;
-	font-size: 20px;
-	line-height: 155%;
 	text-transform: uppercase;
 }
 
@@ -114,12 +110,22 @@ header {
 }
 
 .button	{
-	display: block;
-	width: 150px;
-	height: 48px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
 	color: #fff;
 	border-radius: 4px;
-	line-height: 48px;
+	line-height: 60px;
+	font-size: 20px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
 }
 
 .button:hover {
@@ -151,6 +157,27 @@ header {
 	padding: 30px 0 80px 0;
 	margin-bottom: 50px;
 	background-color: var(--color-bg);
+}
+
+.hero .container {
+	background-image: url('../img/hero.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-position: right center;
+}
+
+.hero h1 {
+	font-size: 72px;
+}
+
+.hero h3 {
+	font-size: 46px;
+	margin-bottom: 80px;
+}
+
+.hero__img {
+	margin-bottom: 60px;
 }
 
 .hero__text {
@@ -223,6 +250,26 @@ footer .container {
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: space-between;
+}
+
+@media screen and (max-width: 991px) {
+	h1, h2 {
+		font-size: 32px;
+		line-height: 110%;
+	}
+
+	h3 {
+		font-size: 20px;
+		line-height: 155%;
+	}
+
+	.hero h1 {
+		font-size: 32px;
+	}
+
+	.hero h3 {
+		font-size: 20px;
+	}
 }
 
 @media screen and (max-width: 390px) {
