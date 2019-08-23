@@ -130,22 +130,26 @@ header {
 	flex-grow: 1;
 	flex-shrink: 1;
 	flex-basis: 0%;
+	transition: .3s;
 }
 
 .button:hover {
 	color: #fff;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.button.-teleg:hover {
+	
+}
+
+.button.-viber:hover {
+	
 }
 
 .button img {
-	width: 20px;
-	height: 20px;
-	margin: 0 7px;
-}
-
-.button.-viber img {
-	width: 45px;
-	height: 45px;
-	margin: 0;
+	width: 25px;
+	height: 25px;
+	margin-right: 7px;
 }
 
 .button.-teleg {
@@ -178,6 +182,10 @@ header {
 .hero h3 {
 	font-size: 43px;
 	margin-bottom: 100px;
+}
+
+.hero__header {
+	padding-left: 15px;
 }
 
 .hero__img {
